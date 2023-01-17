@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    
+}
+.container{
+    background-color: firebrick;
+    
+    height: 169px;
+    width: 100%;
+}
+.container .head-name{
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding: 23px;
+}
+.container marquee{
+    padding-top: 13px;
+    font-size: 20px;
+}
+.lgn{
+    background-image: url("816551.jpg");
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 170px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lgn .contents{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+    z-index: 10;
+    background-color: firebrick;
+}
+.lgn .contents p{
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.lgn .contents input{
+    background-color: firebrick;
+    padding: 10px;
+    width: 260px;
+    font-size: 15px;
+    
+}
+.lgn .contents button{
+    background-color: rgb(161, 31, 31);
+    padding: 10px;
+    border: none;
+    border-color: #EEEEEE;
+}
+.bottom{
+    position:fixed;
+    text-align: center;
+    width: 100%;
+    background-color: firebrick;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 6px;
+}
+.bottom p{
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 30px;
+}
+input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+@media (min-width:785px)
+{
+    .container{
+        height: 115px;
+    }
+    .container marquee{
+        padding-top: 18px;
+        font-size: 20px;
+    }
+    .container .head-name{
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        padding: 15px;
+        font-weight: bold;
+    }
+    
+}
+@media (max-width:433px)
+{
+    .container{
+        height: 150px;
+    }
+    .container marquee{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .container .head-name{
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+        padding-bottom: 0px;
+        padding-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+}
